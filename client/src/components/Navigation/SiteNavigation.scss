@@ -1,0 +1,16 @@
+.site-navigation {
+  box-sizing: border-box;
+  background: green;
+  padding: 4px 5px;
+
+  & > a {
+    background-color: rgb(212, 144, 144);
+    margin: 2px 4px;    
+    padding: 0 6px;
+
+    border-radius: 6px;
+
+    color: white;
+    font-weight: 500;
+  }
+}

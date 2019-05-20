@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import { SiteHeader } from './components';
+import { Home } from './pages';
+
+import './App.scss';
 
 function App() {
-  return (
+  return (<BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SiteHeader />
+      <div className="site-content">
+        <Route exact path="/" component={Home} />
+
+        {/* <Button onClick={() => alert('btn clicked!')} >btn</Button> */}
+      </div>
     </div>
-  );
+  </BrowserRouter>);
 }
 
 export default App;

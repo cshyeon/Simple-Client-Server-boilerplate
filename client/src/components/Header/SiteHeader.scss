@@ -1,0 +1,23 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &.small {
+    
+  }  
+  background: linear-gradient(to left, #161515, #292929);
+  transition: .1s;  
+}
+
+.title-header {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+
+  &.small {
+    // font-size: 1.2rem;
+    padding: 0.4rem;
+  }  
+}
