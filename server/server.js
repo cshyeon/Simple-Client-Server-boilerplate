@@ -1,5 +1,3 @@
-const Test = require('./src');
+const { HttpServer } = require('./src');
 
-const test = new Test();
-
-console.log(test.abc());
+HttpServer.on();
